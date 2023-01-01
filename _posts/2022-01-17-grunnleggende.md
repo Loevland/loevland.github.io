@@ -2,7 +2,7 @@
 title: Etjenesten21 - Grunnleggende
 date: 2022-01-17 12:00:00 +0100
 categories: [Etjenesten, Etjenesten Jul 21]
-tags: [ctf, etjenesten, suid, rev, pwn, python, "2021"]
+tags: [ctf, etjenesten, suid, rev, pwn, python, "2021", NO]
 img_path: /assets/img/etjenesten21/
 ---
 # 1.1_scoreboard
