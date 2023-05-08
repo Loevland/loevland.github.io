@@ -1,6 +1,6 @@
 ---
 title: Cryptoverse CTF 2023
-date: 2023-05-08 07:00:00 +0100
+date: 2023-05-08 07:30:00 +0100
 categories: [CTF, "2023"]
 tags: [ctf, cryptoverse, "2023", pwn, rop, "variable-overwrite", "ret2libc", shellcode]
 img_path: /assets/img/cryptoverse23/
@@ -135,7 +135,7 @@ $ checksec ./ret2school
 
 Since we have the `gets` function gathering our input, and no stack-canary or PIE, this looks like a simple ret2libc attack where we find the base-address of ASLR before calling `system("/bin/sh")`.
 
-We find the offset to be 40
+We find the offset to be 40 by sending a cyclic pattern as input, and checking the offset into the cyclic pattern for the address we crash at, which in this case is `0x6161616161616166`
 ![Ret2school Offset](ret2school_offset.png)
 
 Since we don't have a `puts` function to leak the GOT address of we leak for `printf` instead. In this case it leads to some extra stack-misalignments. Identifying stack-misalignment can be done by checking the instruction which we crash on, which in this case were `movaps`
