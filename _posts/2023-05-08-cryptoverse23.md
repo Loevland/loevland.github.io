@@ -269,7 +269,7 @@ io.interactive()
 ```
 {: .nolineno }
 
-`shellcraft.sh()` is a pwntools function which creates assembly-instructions (our shellcode) which spawns a `/bin/sh` shell for us.
+`shellcraft.sh()` is a pwntools function which creates assembly-instructions (our shellcode) which spawn a `/bin/sh` shell for us.
 
 ```bash
 $ python3 exploit.py
