@@ -7,7 +7,7 @@ img_path: /assets/img/cryptoverse23/
 ---
 These are my writeups for all the pwn-challenges at Cryptoverse CTF 2023.
 
-# Acceptance
+## Acceptance
 > Difficulty: Easy
 >
 > I want to go out but I need to ask my mom first. Help me guys!
@@ -105,7 +105,7 @@ cvctf{Y34h_1_c4N_G0_n0w_tH4nK_y4u}
 {: .nolineno }
 
 
-# Ret2school
+## Ret2school
 > Difficulty: Medium
 >
 > Bypass the authentication system by sending your homework over.
@@ -195,7 +195,7 @@ Although there were some stack-misalignment which were not expected (2 occurrenc
 ![First Blood](blood.png)
 
 
-# Commando Conquest
+## Commando Conquest
 > Difficulty: Medium
 >
 > Background Story

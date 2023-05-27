@@ -5,16 +5,16 @@ categories: [Etjenesten, Etjenesten Jul 21]
 tags: [ctf, etjenesten, suid, rev, pwn, python, "2021", norwegian]
 img_path: /assets/img/etjenesten21/
 ---
-# 1.1_scoreboard
+## 1.1_scoreboard
 Flagget nås ved `cat FLAGG`.
 
-# 1.2_setuid
+## 1.2_setuid
 Flaggfilen eier vi ikke, men vi har en cat-kommando med setuid bit til den brukeren som eier filen. `./cat FLAGG`
 
-# 1.3_injection
+## 1.3_injection
 Binaryen *md5sum* har et setuid-bit satt for eieren av FLAGG. Vi kan kjøre `./md5sum FLAGG; cat FLAGG` for å få programmet til å printe flagget.
 
-# 1.4_overflow
+## 1.4_overflow
 Vi finner ut ved å se på kildekoden at binaryen bruker *strcpy()*, som lar oss overflowe bufferet som lagrer inputen vår. Vi kan også se at variabelen *above* må ha verdien "ABCDEFGH". Hvis *above* er satt korrekt til koden hoppe til `prep_shellcode` siden det er dit `shellcode_ptr` peker. Koden i SHC-enviroment variabelen blir tilslutt i denne funksjonen returnert til, osm gir oss shell som `basic4` brukeren.
 ```shell
 $ export SHC=$(cat sample_shellcode)
@@ -22,7 +22,7 @@ $ ./overflow "AA$(echo $SHC)ABCDEFGHaaaaaaaaaaaaaaaaaaaaaaaa000000"
 ```
 {: .nolineno }
 
-# 1.5_nettverk
+## 1.5_nettverk
 Flagget kommer etter man har kommunisert med en server.
 ```python
 import socket
@@ -67,7 +67,7 @@ if __name__ == "__main__":
     main()
 ```
 
-# 1.6_reversing
+## 1.6_reversing
 Ved å reversere filen *check_password* kan man se at:
 - Passordet må være 32 bytes langt
 - At de første 19 bokstavene er *Reverse_engineering*
@@ -79,10 +79,10 @@ Med Ghidra ser *check_password* slik ut:
 
 ![reversing](6_reversing.png)
 
-# 1.7_path_traversal
+## 1.7_path_traversal
 Vi har et binary som leser filer i et directory som heter *bok*. Vi kan bruke path-traversal til å hoppe tilbake ett directory for å lese FLAGG-filen.
 `./les_bok ../FLAGG`
 
-# 1.8_bonusflagg
+## 1.8_bonusflagg
 Det er et bonus flagg også. Vi kan se i c-koden til *les_bok* at det legges til en *.txt* på teksten vi sender som argument (fila vi vil lese). Vi kan terminere stringen før *.txt* blir lagt til med en url-enkodet null-byte, og lese flagget på samme måte som forrige.
 `./les_bok ../BONUS_FLAGG%00`

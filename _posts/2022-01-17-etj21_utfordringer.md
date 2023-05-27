@@ -5,7 +5,7 @@ categories: [Etjenesten, Etjenesten Jul 21]
 tags: [ctf, etjenesten, rev, xor, crypto, vernam, python, spektrogram, norwegian]
 img_path: /assets/img/etjenesten21/
 ---
-# 3.1.1_PKrypt
+## 3.1.1_PKrypt
 Vi får et flagg som er kryptert, og vi får krypteringsfunksjonen som er brukt på flagget.
 Siden denne oppgaven var gradert "lett" gjettet jeg at krypteringen kanskje var en enkel xor med en key. Det viste seg å stemme. Ut ifra flaggfilen kan vi se at flagget er 46 bytes.
 
@@ -21,7 +21,7 @@ Som er hexadecimal for:
 `etj{lykkelig_er_den_som_vet_siste_siffer_i_pi}`
 
 
-# 3.2.2_lydnøtter
+## 3.2.2_lydnøtter
 Vi får utdelt en lydfil. Når man spiller av denne lydfilen hintes det veldig mye til spekteret, etterfulgt av mye summing.
 
 Vi kan se spekteret til mp3-fila med f-eks Audacity. Det vil da se slik ut:
@@ -39,7 +39,7 @@ Det viser seg at dette er noe som heter *Vernam Cipher*. For å dekode dette cip
 Man får da flagget `FLAGGPÅSPEKTERET`
 
 
-# 3.3.2_guessing_game_1
+## 3.3.2_guessing_game_1
 Scriptet sender inn alle tallene mellom en range lower_range og upper_range.
 
 ```python
@@ -107,7 +107,7 @@ if __name__ == '__main__':
 ```
 
 
-# 3.3.3_guessing_game_2
+## 3.3.3_guessing_game_2
 Denne krever manuell skrivning av lower_range og upper_range for hvert guess, ettersom lyginga til Ravn overraskende nok tok knekken på det automatiske scriptet.
 
 ```python
