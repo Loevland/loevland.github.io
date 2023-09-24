@@ -21,10 +21,10 @@ timezone: Europe/Oslo
 
 title: Loevland                          # the main title
 
-tagline: CTF-player  # it will display as the sub-title
+tagline: CTF player  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
+  A collection of CTF writeups.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://loevland.github.io/'
@@ -44,10 +44,6 @@ social:
     # The first element serves as the copyright owner's link
     - https://twitter.com/0xLoevland      # change to your twitter homepage
     - https://github.com/Loevland       # change to your github homepage
-    # - https://lichess.org/@/Loevland
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
 
 google_site_verification:               # fill in to your verification string
 

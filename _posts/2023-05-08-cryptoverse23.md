@@ -90,7 +90,7 @@ io.sendline(payload)
 
 io.interactive()
 ```
-{: .nolineno file=exploit.py }
+{: .nolineno file="exploit.py" }
 
 ```bash
 $ python3 exploit.py
@@ -175,7 +175,7 @@ io.recvuntil(b"homework: ")
 io.sendline(rop.chain())
 io.interactive()
 ```
-{: .nolineno file=exploit.py }
+{: .nolineno file="exploit.py" }
 
 which gives shell on the server
 ```bash
