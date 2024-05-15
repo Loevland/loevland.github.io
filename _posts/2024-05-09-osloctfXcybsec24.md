@@ -7,7 +7,7 @@ img_path: /assets/img/osloctfXcybsec24/
 ---
 
 
-# My First Overflow
+## My First Overflow
 
 ![Challenge](my_first_overflow.png)
 
@@ -111,7 +111,7 @@ Contents:
 flag{path_overwrite_in_the_house}
 ```
 
-# Overflowing with binary data
+## Overflowing with binary data
 
 ![Challenge](overflowing_with_binary_data.png)
 
@@ -224,7 +224,7 @@ You got it! Here's the flag: flag{binary_schminary}
 ```
 
 
-# Did someone say ret2win?
+## Did someone say ret2win?
 
 ![Challenge](did_someone_say_ret2win.png)
 
@@ -322,7 +322,7 @@ flag{its_raining_shells}
 ```
 
 
-# The inspector's new gadget
+## The inspector's new gadget
 
 ![Challenge](the_inspectors_new_gadget.png)
 
@@ -429,7 +429,7 @@ ROP chain looks good! Congrats, here's the flag: flag{greetings_inspector_gadget
 ```
 
 
-# Mary Poppins strikes again
+## Mary Poppins strikes again
 
 ![Challenge](mary_poppins_strikes_again.png)
 
@@ -517,7 +517,7 @@ $ python3 solve.py
 ROP chain looks good! Congrats, here's the flag: flag{popping_flags_all_day}
 ```
 
-# Roptastic shell
+## Roptastic shell
 
 ![Challenge](roptastic_shell.png)
 
