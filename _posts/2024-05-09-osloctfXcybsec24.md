@@ -192,7 +192,7 @@ Good luck!
 5. [Quit]
 ```
 
-In the previous challenge we overwrite the `path` entry in the `file_data` struct, but in this challenge we need to overwrite the `size` entry. Because we have to send bytes, we can't just write a lot of A's and 0x1337 as the input (similar to the previous challenge). Instead, we need to write the bytes of the integer `0x1337` into the buffer. This is easier to do with a python script.
+In the previous challenge we overwrote the `path` entry in the `file_data` struct, but in this challenge we need to overwrite the `size` entry. Because we have to send bytes, we can't just write a lot of A's and 0x1337 as the input (similar to the previous challenge). Instead, we need to write the bytes of the integer `0x1337` into the buffer. This is easier to do with a python script.
 
 The `size` entry is a 32-bit integer, so we need to write 4 bytes of data to overwrite it. We can use the `p32` function from `pwntools` to pack the integer `0x1337` into 4 bytes, and then write this data into the buffer.
 
