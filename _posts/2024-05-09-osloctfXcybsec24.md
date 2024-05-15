@@ -531,7 +531,7 @@ Our goal is similar to the ret2win challenge, only that we want to call `system(
 from pwn import *
 
 # Connect to remote instance
-io = remote("pwn.tokle.dev", 1340)
+io = remote("pwn.tokle.dev", 1342)
 
 # Receive all the output text from the program
 io.recvuntil(b"Good luck!")
