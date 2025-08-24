@@ -3,7 +3,7 @@ title: Cryptoverse CTF 2023
 date: 2023-05-08 07:30:00 +0100
 categories: [CTF, "2023"]
 tags: [ctf, cryptoverse, "2023", pwn, rop, "variable-overwrite", "ret2libc", shellcode]
-img_path: /assets/img/cryptoverse23/
+media_subpath: /assets/img/cryptoverse23/
 ---
 These are my writeups for all the pwn-challenges at Cryptoverse CTF 2023.
 

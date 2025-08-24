@@ -3,7 +3,7 @@ title: Etjenesten21 - Utfordringer
 date: 2022-01-17 14:00:00 +0100
 categories: [Etjenesten, Etjenesten Jul 21]
 tags: [ctf, etjenesten, rev, xor, crypto, vernam, python, spektrogram, norwegian]
-img_path: /assets/img/etjenesten21/
+media_subpath: /assets/img/etjenesten21/
 ---
 ## 3.1.1_PKrypt
 Vi får et flagg som er kryptert, og vi får krypteringsfunksjonen som er brukt på flagget.

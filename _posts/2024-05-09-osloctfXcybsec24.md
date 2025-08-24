@@ -3,7 +3,7 @@ title: Cybsec X Oslo CTF 2024
 date: 2024-05-09 23:00:00 +0100
 categories: [CTF, "2024"]
 tags: [ctf, pwn, ret2win, rop]
-img_path: /assets/img/osloctfXcybsec24/
+media_subpath: /assets/img/osloctfXcybsec24/
 ---
 
 

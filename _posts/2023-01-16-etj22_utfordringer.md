@@ -3,7 +3,7 @@ title: Etjenesten22 - Utfordringer
 date: 2023-01-16 10:30:00 +0100
 categories: [Etjenesten, Etjenesten Jul 22]
 tags: [ctf, etjenesten, "2022", "kontroll-13", assembly, norwegian]
-img_path: /assets/img/etjenesten22/
+media_subpath: /assets/img/etjenesten22/
 ---
 # 3.2. Utfordringer middels
 Jeg gjorde middels-utfordringer for `kontroll-13`, som er et custom språk som minner om assembly, med eget instruksjonssett.

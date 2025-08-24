@@ -3,7 +3,7 @@ title: NewportBlake CTF 2023
 date: 2023-12-05 18:00:00 +0100
 categories: [CTF, "2023"]
 tags: [ctf, "newportblake", "2023", "pwn", "heap", "tcache", "got-overwrite", "ret2win"]
-img_path: /assets/img/newportblake23/
+media_subpath: /assets/img/newportblake23/
 ---
 
 # Ribbit
